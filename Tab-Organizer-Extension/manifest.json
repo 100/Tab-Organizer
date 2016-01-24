@@ -1,0 +1,17 @@
+{
+    "name": "Tab Organizer",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Rearranges tabs into groups of matching URLs.",
+    "background": {
+        "persistent": false,
+        "scripts": ["bg.js"]
+    },
+    "permissions": ["tabs"],
+    "icons":{
+        "128":"icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    }
+}
