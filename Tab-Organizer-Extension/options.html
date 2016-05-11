@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Organizer Options</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Little style overrides not warranting a separate css file -->
+    <style>
+    p{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    <h1><strong>Tab Organizer by Devin Soni</strong></h1>
+                    <h3>Version 1.0</h3>
+                </p>
+
+                <p>
+                    <h4><strong>Keyboard shortcut to sort is:</strong> <u>Ctrl+Shift+A</u> for Windows, and <u>Command+Shift+A</u> for Mac.</h4>
+                </p>
+
+                <p>
+                    <h4><strong>Sorting type:</strong></h4>
+                    <select id="type">
+                        <option value="manual" selected="selected">Manual</option>
+                        <option value="auto">Auto</option>
+                    </select>
+
+                    <br><br>
+
+                    <h4><strong>Auto-sort frequency (if selected):</strong></h4>
+                    <select id="freq">
+                        <option value="5">5 minutes</option>
+                        <option value="30" selected="selected">30 minutes</option>
+                        <option value="60">60 minutes</option>
+                    </select>
+                </p>
+
+                <p>
+                    <button id="save">Save Settings</button>
+                    <div id="status"></div>
+                </p>
+
+                <script src="options.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

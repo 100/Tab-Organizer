@@ -2,16 +2,26 @@
     "name": "Tab Organizer",
     "version": "0.1",
     "manifest_version": 2,
-    "description": "Rearranges tabs into groups of matching URLs.",
+    "description": "Organizes and Rearranges tabs into groups of matching URLs.",
     "background": {
-        "persistent": false,
-        "scripts": ["bg.js"]
+        "persistent": true,
+        "scripts": ["bg.js", "options.js"]
     },
-    "permissions": ["tabs"],
+    "permissions": ["tabs", "storage"],
     "icons":{
         "128":"icon128.png"
     },
     "browser_action": {
         "default_icon": "icon128.png"
-    }
+    },
+    "commands": {
+        "activate": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+A",
+                "mac": "Command+Shift+A"
+            },
+            "description": "Activate sorting"
+        }
+    },
+    "options_page": "options.html"
 }
