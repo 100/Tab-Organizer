@@ -7,7 +7,7 @@
 Chrome extension that rearranges tabs in groups of matching URLs. Groups tabs in the order that the group's first member originally appeared.
 
 #### Version 1.0
-Now allows users to auto-sort and use the keyboard shortcut "Ctrl + Shift + A" to sort.
+Added options page, and now allows users to auto-sort and use the keyboard shortcut "Ctrl + Shift + A" to sort.
 
 #### Version 0.1
 Initial version.
