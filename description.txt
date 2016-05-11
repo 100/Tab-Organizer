@@ -1,3 +1,5 @@
+*** FEATURED ON PRODUCT HUNT AND LIFEHACKER ***
+
 Organizes the unpinned tabs in the current window by grouping them by URL. Tabs from the same base URL (the same website) will be grouped together, and groups will be made in the order that the first tab from that group appears in the original order.
 
 Use the extension by clicking its button, and it will rearrange the tabs in the current window, ignoring any pinned tabs.
