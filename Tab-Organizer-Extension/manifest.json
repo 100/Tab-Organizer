@@ -2,7 +2,7 @@
     "name": "Tab Organizer",
     "version": "0.1",
     "manifest_version": 2,
-    "description": "Organizes and Rearranges tabs into groups of matching URLs.",
+    "description": "Organizes and Rearranges tabs by URL.",
     "background": {
         "persistent": true,
         "scripts": ["bg.js", "options.js"]
