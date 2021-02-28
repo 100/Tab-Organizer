@@ -12,7 +12,6 @@ function baseURL(url){
 
 //sorting algorithm
 function sortTabs(tabs){
-    console.log("Hit the browser on click.");
     var baseURLs = {};
     var URLOrder = [];
     var lastPinned = 0;
@@ -25,11 +24,16 @@ function sortTabs(tabs){
         }
         var base = baseURL(tabs[i].url);
         if (base in baseURLs){
-            baseURLs[base].push([tabs[i].id, tabs[i].index]);
+            baseURLs[base].push([tabs[i].id, tabs[i].index, tabs[i].title]);
         }
         else{
-            baseURLs[base] = [[tabs[i].id, tabs[i].index]];
+            baseURLs[base] = [[tabs[i].id, tabs[i].index, tabs[i].title]];
             URLOrder.push(base);
+        }
+    }
+   for (var i = 0; i < URLOrder.length; i++){
+        if (baseURLs[URLOrder[i]].length > 1){
+            baseURLs[URLOrder[i]].sort((a, b) => (a[2].toLowerCase() > b[2].toLowerCase()) ? 1 : -1)
         }
     }
     var currTab = lastPinned+1;
