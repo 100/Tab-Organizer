@@ -1,5 +1,8 @@
 //utility function to obtain base URL from a given URL string
 function baseURL(url){
+    if (url.indexOf("chrome-extension://") != -1){
+        url = url.split(/chrome-extension\:\/\/.*?\//).slice(1,2).join();
+    }
     if (url.indexOf("http") != -1){
         var temp = url.split("//").slice(1,2).join().toLowerCase();
         if (url.indexOf("/") != -1){
@@ -12,7 +15,6 @@ function baseURL(url){
 
 //sorting algorithm
 function sortTabs(tabs){
-    console.log("Hit the browser on click.");
     var baseURLs = {};
     var URLOrder = [];
     var lastPinned = 0;

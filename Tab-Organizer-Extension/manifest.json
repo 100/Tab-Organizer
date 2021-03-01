@@ -1,6 +1,6 @@
 {
     "name": "Tab Organizer",
-    "version": "1.0",
+    "version": "1.1.0",
     "manifest_version": 2,
     "description": "Organizes and Rearranges tabs by URL.",
     "background": {
